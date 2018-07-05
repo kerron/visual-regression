@@ -20,17 +20,6 @@ This will install Backstopjs and its dependencies globally on your machine.
 
 If permission issues popup, `sudo` is your friend.
 
-
-### Step 2
-To setup a Backstopjs instance (the place you'll run and store all your tests), `cd` to a path and `mkdir` a folder of your choice.
-
-### Step 3 (optional)
-To create your own Backstopjs configurables, inside the previously created folder run:
-
-`backstop init`
-
-This command will create a backstop.js file and related folders. You can then modify the backstop.js file according to your specific requirements.
-
 ### Step 2
 After cloning, cd into folder and run a set of commands below.  
 
@@ -46,10 +35,11 @@ The following commands allow you to specify your own test and reference host.
 
 `backstop reference --configPath=backstop-settings.js --refhost=http://localhost:8080`
 
-`backstop test --configPath=backstop-settings.js --testhost=http://www.houseoffraser.co.uk/`
+`backstop test --configPath=backstop-settings.js --testhost=http://www.google.co.uk/`
 
 Using the 2nd set of commands, you can specific different environments without having to modify the backstop-settings.js file. For other settings such as removing tags with certain classes, then you will need to modify the file.
 
+### Step 3
 #### Checking Your Report
 You are automatically notified of any failure/success in terminal.
 To see a visual representation of this you'll need to navigate to the following folder:
@@ -58,7 +48,7 @@ To see a visual representation of this you'll need to navigate to the following 
 
 and open the index.html file.
 
-### Step 6
+### Step 4
 Assuming all regressions are as expected, or you've reached a consensus, you can accept them with the following command:
 
 `backstop approve`
